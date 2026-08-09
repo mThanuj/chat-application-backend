@@ -1,0 +1,17 @@
+spring:
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  jpa:
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://localhost:3306/chat_app?createDatabaseIfNotExist=true
+    username: root
+    password: Levi#Ackerman
+  application:
+    name: chat-application-backend
+
+server:
+  port: 8080
